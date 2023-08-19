@@ -57,8 +57,8 @@ export default function Homepage({navigation}) {
           <View style={Styles.line} />
           <Text style={Styles.secondText}>{`Email: ${authUser.email}`}</Text>
           <Button style={Styles.button} mode="contained" onPress={()=>{navigation.navigate('info')}}> Go to Info </Button> 
-          <Button style={Styles.button} mode="contained" onPress={()=>{navigation.navigate('itemList', {email})}}> Item List </Button>
-          <Button style={Styles.button} mode="contained" onPress={()=>{navigation.navigate('form', {email})}}>Add Item</Button>
+          <Button style={Styles.button} mode="contained" onPress={()=>{navigation.navigate('itemList', {email})}}> Phone Book </Button>
+          <Button style={Styles.button} mode="contained" onPress={()=>{navigation.navigate('form', {email})}}>Add New Contact</Button>
           <Button style={Styles.button} mode="contained" onPress={userSignOut}>SignOut</Button>
 
           <View style={{borderWidth:2, borderColor: 'white', padding: 10}}>
