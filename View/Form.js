@@ -13,7 +13,6 @@ const Form = ({route}) => {
   const handleSubmit = async () => {
     try {
       const newData = [firstName, lastName, country, mobileNumber];
-      console.log("first", route.params)
       const userKey = route.params.email ? route.params.email : 'guest';
 
       
@@ -29,7 +28,7 @@ const Form = ({route}) => {
 
       // Save the updated array back to AsyncStorage
       await AsyncStorage.setItem(userKey, JSON.stringify(dataArray));
-      console.log('Form data saved:', dataArray);
+      console.log('Form data saved:');
       setFirstName("")
       setLastName("")
       setCountry("")

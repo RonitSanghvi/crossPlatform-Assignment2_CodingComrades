@@ -13,7 +13,6 @@ export default function SignUp({navigation}) {
     const signUp = (e) => {
 
         if(password===cPassword){
-            console.log(email, password, cPassword);
         
             createUserWithEmailAndPassword(auth, email, password)
             .then((userCredential) => {

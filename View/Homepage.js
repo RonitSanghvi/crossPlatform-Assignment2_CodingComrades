@@ -13,7 +13,7 @@ export default function Homepage({navigation}) {
   useEffect(() => {
     const listen = onAuthStateChanged(auth, (user) => {
       if (user) {
-        console.log("Loged In",user)
+        console.log("Logged In")
         setEmail(user.email)
         setAuthUser(user);
       } else {
@@ -27,7 +27,6 @@ export default function Homepage({navigation}) {
   }, []);
 
   const userSignOut = () => {
-    console.log("Inside sign out");
     signOut(auth)
       .then(() => {
         console.log("sign out successful");
@@ -41,7 +40,7 @@ export default function Homepage({navigation}) {
       updateProfile(authUser, {
         displayName: username,
       }).then(() => {
-        console.log("Display name updated successfully", authUser);
+        console.log("Display name updated successfully");
         setUsername("")
       }).catch((error) => {
         console.log("Error updating display name:", error);
