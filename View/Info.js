@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, StyleSheet, Text, ScrollView } from 'react-native';
+import { View, Text, ScrollView } from 'react-native';
 import Styles from '../Styles';
 
 export default Info = () => {

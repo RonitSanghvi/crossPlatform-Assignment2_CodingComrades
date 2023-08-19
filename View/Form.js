@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import { View, StyleSheet, Text } from 'react-native';
+import { View, Text } from 'react-native';
 import { TextInput, Button } from 'react-native-paper';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import Styles from '../Styles';
 
-const Form = ({route}) => {
+export default Form = ({route}) => {
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
   const [country, setCountry] = useState('');
@@ -72,5 +72,3 @@ const Form = ({route}) => {
     </View>
   );
 };
-
-export default Form;

@@ -1,6 +1,6 @@
 import { signInWithEmailAndPassword } from "firebase/auth";
 import React, { useState } from "react";
-import { Text, View, StyleSheet, TextInput, Button, TouchableOpacity } from "react-native";
+import { Text, View, TextInput, Button, TouchableOpacity } from "react-native";
 import { auth } from "../Controller/firebase";
 import Styles from "../Styles";
 
